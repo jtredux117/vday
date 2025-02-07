@@ -1,0 +1,51 @@
+body {
+    font-family: 'Brush Script MT', cursive;
+    background-color: #ffe0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    position: relative; /* This is crucial for positioning the "No" button */
+    width: 500px; /* Fixed width for the container */
+    height: 300px; /* Fixed height for the container */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d6336c;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5em;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+#noButton {
+    background-color: #ff6666;
+    color: white;
+    position: relative; /* The "No" button is absolutely positioned */
+}
+
+#yesButton {
+    background-color: #66ff66;
+    color: white;
+    position: relative; /* The "Yes" button is relative and doesn't move */
+}
